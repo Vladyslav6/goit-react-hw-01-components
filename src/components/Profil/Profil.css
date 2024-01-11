@@ -2,18 +2,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 100px;
  
 }
 .description { 
+  padding-top: 50px;
   
 }
 .avatar {
-width: 300px;
-border-radius: 100%;
+width: 150px;
+border-radius: 50%;
 
 }
 .name {
   text-align: center;
+
 }
 .tag{
   text-align: center;
