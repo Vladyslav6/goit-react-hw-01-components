@@ -1,8 +1,15 @@
 import './TransactionHistory.css';
 
-const TransactionHistory = () => {
+const TransactionHistory = ({ items }) => {
+  const transactMap = items.map(item => (
+    <tr key={item.id}>
+      <td>{item.type}</td>
+      <td>{item.amount}</td>
+      <td>{item.currency}</td>
+    </tr>
+  ));
   return (
-    <table class="transaction-history">
+    <table className="transaction-history">
       <thead>
         <tr>
           <th>Type</th>
@@ -11,18 +18,7 @@ const TransactionHistory = () => {
         </tr>
       </thead>
 
-      <tbody>
-        <tr>
-          <td>Invoice</td>
-          <td>125</td>
-          <td>USD</td>
-        </tr>
-        <tr>
-          <td>Withdrawal</td>
-          <td>85</td>
-          <td>USD</td>
-        </tr>
-      </tbody>
+      <tbody>{transactMap}</tbody>
     </table>
   );
 };
