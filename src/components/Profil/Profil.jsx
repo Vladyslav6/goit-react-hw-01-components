@@ -17,15 +17,15 @@ const Profile = props => {
       <ul className={Styles.stats}>
         <li>
           <span className={Styles.label}>Followers</span>
-          <span className={Styles.quantity}> {props.stats.followers}</span>
+          <span className={Styles.quantity}>: {props.stats.followers}</span>
         </li>
         <li>
           <span className={Styles.label}>Views</span>
-          <span className={Styles.quantity}> {props.stats.views}</span>
+          <span className={Styles.quantity}>: {props.stats.views}</span>
         </li>
         <li>
           <span className={Styles.label}>Likes</span>
-          <span className={Styles.quantity}> {props.stats.likes}</span>
+          <span className={Styles.quantity}>: {props.stats.likes}</span>
         </li>
       </ul>
     </div>
