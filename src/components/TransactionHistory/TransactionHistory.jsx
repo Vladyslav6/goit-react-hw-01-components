@@ -11,7 +11,7 @@ const TransactionHistory = ({ items }) => {
   return (
     <table className={Styles.transactionHistory}>
       <thead>
-        <tr>
+        <tr className={Styles.colorB}>
           <th>Type</th>
           <th>Amount</th>
           <th>Currency</th>
