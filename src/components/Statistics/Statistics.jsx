@@ -15,8 +15,7 @@ const Statistics = ({ title, stats }) => {
   return (
     <>
       <section className={Styles.statistics}>
-        <h2 className={Styles.title}>{title}</h2>
-
+        {title && <h2 className={Styles.title}>{title}</h2>}
         <ul className={Styles.statList}>{StatsPercent}</ul>
       </section>
     </>
